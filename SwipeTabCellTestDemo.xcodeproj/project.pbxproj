@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7D65C7127AF616402403A134 /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5F7997CCECFEB11E0C5845BA /* libPods.a */; };
 		944354791BFC64CF009CCE98 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 944354781BFC64CF009CCE98 /* AppDelegate.swift */; };
 		9443547B1BFC64CF009CCE98 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9443547A1BFC64CF009CCE98 /* ViewController.swift */; };
 		9443547E1BFC64CF009CCE98 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9443547C1BFC64CF009CCE98 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		583265BCF0FBBCA92EF36168 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
+		5F7997CCECFEB11E0C5845BA /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		944354751BFC64CF009CCE98 /* SwipeTabCellTestDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeTabCellTestDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		944354781BFC64CF009CCE98 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		9443547A1BFC64CF009CCE98 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -47,6 +50,8 @@
 		944354941BFC64D0009CCE98 /* SwipeTabCellTestDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeTabCellTestDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		944354981BFC64D0009CCE98 /* SwipeTabCellTestDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SwipeTabCellTestDemoUITests.swift; sourceTree = "<group>"; };
 		9443549A1BFC64D0009CCE98 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		944354A61BFC698B009CCE98 /* SwipeTabCellTestDemo-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeTabCellTestDemo-Bridging-Header.h"; sourceTree = "<group>"; };
+		F513258218FDBBC020D76865 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D65C7127AF616402403A134 /* libPods.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -74,6 +80,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8D9DD870C9BEA7A452818057 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5F7997CCECFEB11E0C5845BA /* libPods.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		9443546C1BFC64CF009CCE98 = {
 			isa = PBXGroup;
 			children = (
@@ -81,6 +95,8 @@
 				9443548C1BFC64D0009CCE98 /* SwipeTabCellTestDemoTests */,
 				944354971BFC64D0009CCE98 /* SwipeTabCellTestDemoUITests */,
 				944354761BFC64CF009CCE98 /* Products */,
+				9EBA3405DE560BC530B7DAAE /* Pods */,
+				8D9DD870C9BEA7A452818057 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -103,6 +119,7 @@
 				9443547F1BFC64CF009CCE98 /* Assets.xcassets */,
 				944354811BFC64D0009CCE98 /* LaunchScreen.storyboard */,
 				944354841BFC64D0009CCE98 /* Info.plist */,
+				944354A61BFC698B009CCE98 /* SwipeTabCellTestDemo-Bridging-Header.h */,
 			);
 			path = SwipeTabCellTestDemo;
 			sourceTree = "<group>";
@@ -125,6 +142,15 @@
 			path = SwipeTabCellTestDemoUITests;
 			sourceTree = "<group>";
 		};
+		9EBA3405DE560BC530B7DAAE /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F513258218FDBBC020D76865 /* Pods.debug.xcconfig */,
+				583265BCF0FBBCA92EF36168 /* Pods.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -132,9 +158,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 9443549D1BFC64D0009CCE98 /* Build configuration list for PBXNativeTarget "SwipeTabCellTestDemo" */;
 			buildPhases = (
+				19209FB4933DCC4D2BC5433F /* Check Pods Manifest.lock */,
 				944354711BFC64CF009CCE98 /* Sources */,
 				944354721BFC64CF009CCE98 /* Frameworks */,
 				944354731BFC64CF009CCE98 /* Resources */,
+				ACDBFD63026B6D2D01DDFFC7 /* Embed Pods Frameworks */,
+				4F1EC1676E6880FAEE0F296B /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -250,6 +279,54 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		19209FB4933DCC4D2BC5433F /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		4F1EC1676E6880FAEE0F296B /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ACDBFD63026B6D2D01DDFFC7 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods/Pods-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		944354711BFC64CF009CCE98 /* Sources */ = {
@@ -397,23 +474,27 @@
 		};
 		9443549E1BFC64D0009CCE98 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F513258218FDBBC020D76865 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwipeTabCellTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LangYue-China.SwipeTabCellTestDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SwipeTabCellTestDemo/SwipeTabCellTestDemo-Bridging-Header.h";
 			};
 			name = Debug;
 		};
 		9443549F1BFC64D0009CCE98 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 583265BCF0FBBCA92EF36168 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SwipeTabCellTestDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "LangYue-China.SwipeTabCellTestDemo";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "$(SRCROOT)/SwipeTabCellTestDemo/SwipeTabCellTestDemo-Bridging-Header.h";
 			};
 			name = Release;
 		};
@@ -484,6 +565,7 @@
 				9443549F1BFC64D0009CCE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		944354A01BFC64D0009CCE98 /* Build configuration list for PBXNativeTarget "SwipeTabCellTestDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -492,6 +574,7 @@
 				944354A21BFC64D0009CCE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		944354A31BFC64D0009CCE98 /* Build configuration list for PBXNativeTarget "SwipeTabCellTestDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -500,6 +583,7 @@
 				944354A51BFC64D0009CCE98 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
